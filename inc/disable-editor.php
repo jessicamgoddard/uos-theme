@@ -2,14 +2,14 @@
 /**
  * Disable Editor
  *
- * @package      StarterTheme
+ * @package      UOStheme
  * @author       P&P Creative
  * @since        1.0.0
 **/
 
 
 // Templates and Page IDs without editor
-function starter_theme_disable_editor( $id = false ) {
+function uos_disable_editor( $id = false ) {
 
 	$excluded_templates = array(
 	);
@@ -27,30 +27,30 @@ function starter_theme_disable_editor( $id = false ) {
 }
 
 // Disable Gutenberg by template
-function starter_theme_disable_gutenberg( $can_edit, $post_type ) {
+function uos_disable_gutenberg( $can_edit, $post_type ) {
 
 	if( ! ( is_admin() && !empty( $_GET['post'] ) ) )
 		return $can_edit;
 
-	if( starter_theme_disable_editor( $_GET['post'] ) )
+	if( uos_disable_editor( $_GET['post'] ) )
 		$can_edit = false;
 
 	return $can_edit;
 
 }
-add_filter( 'gutenberg_can_edit_post_type', 'starter_theme_disable_gutenberg', 10, 2 );
-add_filter( 'use_block_editor_for_post_type', 'starter_theme_disable_gutenberg', 10, 2 );
+add_filter( 'gutenberg_can_edit_post_type', 'uos_disable_gutenberg', 10, 2 );
+add_filter( 'use_block_editor_for_post_type', 'uos_disable_gutenberg', 10, 2 );
 
 // Disable Classic Editor by template
-function starter_theme_disable_classic_editor() {
+function uos_disable_classic_editor() {
 
 	$screen = get_current_screen();
 	if( 'page' !== $screen->id || ! isset( $_GET['post']) )
 		return;
 
-	if( starter_theme_disable_editor( $_GET['post'] ) ) {
+	if( uos_disable_editor( $_GET['post'] ) ) {
 		remove_post_type_support( 'page', 'editor' );
 	}
 
 }
-add_action( 'admin_head', 'starter_theme_disable_classic_editor' );
+add_action( 'admin_head', 'uos_disable_classic_editor' );

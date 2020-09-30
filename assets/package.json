@@ -1,5 +1,5 @@
 {
-  "name": "starter-theme",
+  "name": "uos-theme",
   "version": "1.0.0",
   "description": "Custom child theme for the Genesis Framework.",
   "main": "index.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jessicamgoddard/starter.git"
+    "url": "git+https://github.com/jessicamgoddard/uos-theme.git"
   },
   "author": "Jessica Goddard",
   "license": "ISC",

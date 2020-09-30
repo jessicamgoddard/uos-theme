@@ -2,14 +2,14 @@
 /**
  * Gutenberg
  *
- * @package      StarterTheme
+ * @package      UOStheme
  * @author       P&P Creative
  * @since        1.0.0
 **/
 
 // Set editor stylesheet
-add_action( 'after_setup_theme', 'starter_theme_add_editor_styles' );
-function starter_theme_add_editor_styles() {
+add_action( 'after_setup_theme', 'uos_add_editor_styles' );
+function uos_add_editor_styles() {
 
   add_editor_style( '/assets/dist/editor.min.css' );
 
@@ -19,8 +19,8 @@ function starter_theme_add_editor_styles() {
 remove_theme_support( 'core-block-patterns' );
 
 // Adds body classes to help with styling
-add_filter( 'body_class', 'starter_theme_blocks_body_classes' );
-function starter_theme_blocks_body_classes( $classes ) {
+add_filter( 'body_class', 'uos_blocks_body_classes' );
+function uos_blocks_body_classes( $classes ) {
 
 	if ( ! is_singular() || ! function_exists( 'has_blocks' ) || ! function_exists( 'parse_blocks' ) ) {
 		return $classes;

@@ -57,7 +57,7 @@ module.exports = {
       files: '**/*.php',
       host: 'localhost',
       port: 3000,
-      proxy: 'http://starter-site.test/'
+      proxy: 'http://university-of-somerset.test/'
     })
   ],
   optimization: {

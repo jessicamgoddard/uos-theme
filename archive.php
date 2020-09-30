@@ -2,15 +2,15 @@
 /**
  * Archive
  *
- * @package      StarterTheme
+ * @package      UOStheme
  * @author       P&P Creative
  * @since        1.0.0
 **/
 
 
 // Adds body class to all pages using this template
-add_filter( 'body_class', 'starter_theme_blog_archive_body_class' );
-function starter_theme_blog_archive_body_class( $classes ) {
+add_filter( 'body_class', 'uos_blog_archive_body_class' );
+function uos_blog_archive_body_class( $classes ) {
 
 	$classes[] = 'archive';
 

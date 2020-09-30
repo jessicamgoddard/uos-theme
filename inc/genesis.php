@@ -2,7 +2,7 @@
 /**
  * Genesis
  *
- * @package      StarterTheme
+ * @package      UOStheme
  * @author       P&P Creative
  * @since        1.0.0
 **/
@@ -26,8 +26,8 @@ add_action( 'genesis_header', 'genesis_do_nav' );
 add_filter( 'genesis_site_title_wrap', function( $wrap ) { return is_front_page() ? 'h1' : $wrap; } );
 
 // Removes Genesis templates
-add_filter( 'theme_page_templates', 'starter_theme_remove_genesis_templates' );
-function starter_theme_remove_genesis_templates( $page_templates ) {
+add_filter( 'theme_page_templates', 'uos_remove_genesis_templates' );
+function uos_remove_genesis_templates( $page_templates ) {
 
 	unset( $page_templates['page_archive.php'] );
 	unset( $page_templates['page_blog.php'] );
@@ -37,8 +37,8 @@ function starter_theme_remove_genesis_templates( $page_templates ) {
 }
 
 // Adds search to secondary navigation
-add_filter( 'wp_nav_menu_items', 'starter_themeadd_search_to_menu', 10, 2 );
-function starter_themeadd_search_to_menu( $menu, $args ) {
+add_filter( 'wp_nav_menu_items', 'uos_add_search_to_menu', 10, 2 );
+function uos_add_search_to_menu( $menu, $args ) {
 
   if( ( 'secondary' !== $args->theme_location ) )
     return $menu;
@@ -54,8 +54,8 @@ function starter_themeadd_search_to_menu( $menu, $args ) {
 }
 
 // Adds hero image to page and posts
-add_action( 'genesis_entry_header', 'starter_themeadd_page_post_hero_image', 5 );
-function starter_themeadd_page_post_hero_image() {
+add_action( 'genesis_entry_header', 'uos_add_page_post_hero_image', 5 );
+function uos_add_page_post_hero_image() {
 
   if( ( is_page() || is_singular() ) && has_post_thumbnail() ) :
     ?>
@@ -70,7 +70,7 @@ function starter_themeadd_page_post_hero_image() {
 
         <?php if( is_singular() && get_the_category() ) :?>
           <div class="page-hero__meta">
-            <?= starter_themecategories_with_colors() ?>
+            <?= uos_categories_with_colors() ?>
           </div>
         <?php endif; ?>
 
@@ -87,8 +87,8 @@ function starter_themeadd_page_post_hero_image() {
 
 }
 
-add_action( 'genesis_entry_header', 'starter_themeadd_header_wrap_close', 10 );
-function starter_themeadd_header_wrap_close() {
+add_action( 'genesis_entry_header', 'uos_add_header_wrap_close', 10 );
+function uos_add_header_wrap_close() {
 
   if( is_page() || is_singular() ) :
     echo '</div>';

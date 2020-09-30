@@ -2,15 +2,15 @@
 /**
  * Config
  *
- * @package      StarterTheme
+ * @package      UOStheme
  * @author       P&P Creative
  * @since        1.0.0
 **/
 
-$starter_theme_config = genesis_get_config( 'main' );
+$uos_config = genesis_get_config( 'main' );
 
 // Enables ACF global options page if selected
-if( $starter_theme_config[ 'acf-options-page' ] === true ) {
+if( $uos_config[ 'acf-options-page' ] === true ) {
 
   if( function_exists( 'acf_add_options_page' ) ) {
 
@@ -23,7 +23,7 @@ if( $starter_theme_config[ 'acf-options-page' ] === true ) {
 }
 
 // Sets custom image sizes
-$image_sizes = $starter_theme_config[ 'image-sizes' ];
+$image_sizes = $uos_config[ 'image-sizes' ];
 
 if( $image_sizes ) {
 
@@ -38,15 +38,15 @@ if( $image_sizes ) {
 // Registers the responsive menus
 if ( function_exists( 'genesis_register_responsive_menus' ) ) {
 
-	genesis_register_responsive_menus( $starter_theme_config[ 'responsive-menus' ] );
+	genesis_register_responsive_menus( $uos_config[ 'responsive-menus' ] );
 
 }
 
 // Reduces secondary navigation to one level depth
-if( $starter_theme_config[ 'reduce-secondary-nav' ] === true ) {
+if( $uos_config[ 'reduce-secondary-nav' ] === true ) {
 
-  add_filter( 'wp_nav_menu_args', 'starter_theme_secondary_menu_args' );
-  function starter_theme_secondary_menu_args( $args ) {
+  add_filter( 'wp_nav_menu_args', 'uos_secondary_menu_args' );
+  function uos_secondary_menu_args( $args ) {
 
     if( 'secondary' === $args['theme_location'] ) {
 
@@ -61,9 +61,9 @@ if( $starter_theme_config[ 'reduce-secondary-nav' ] === true ) {
 }
 
 // Removes sidebars
-if( $starter_theme_config[ 'remove-sidebars' ] !== null ) {
+if( $uos_config[ 'remove-sidebars' ] !== null ) {
 
-  foreach( $starter_theme_config[ 'remove-sidebars' ] as $sidebar ) {
+  foreach( $uos_config[ 'remove-sidebars' ] as $sidebar ) {
 
     unregister_sidebar( $sidebar );
 
@@ -72,9 +72,9 @@ if( $starter_theme_config[ 'remove-sidebars' ] !== null ) {
 }
 
 // Removes page layouts
-if( $starter_theme_config[ 'remove-layouts' ] !== null ) {
+if( $uos_config[ 'remove-layouts' ] !== null ) {
 
-  foreach( $starter_theme_config[ 'remove-layouts' ] as $layout ) {
+  foreach( $uos_config[ 'remove-layouts' ] as $layout ) {
 
     genesis_unregister_layout( $layout );
 
@@ -83,14 +83,14 @@ if( $starter_theme_config[ 'remove-layouts' ] !== null ) {
 }
 
 // Force full-width layout
-if( $starter_theme_config[ 'force-full-width' ] === true ) {
+if( $uos_config[ 'force-full-width' ] === true ) {
 
   add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
 
 }
 
 // Adds footer widgets
-// if( $starter_theme_config[ 'genesis-footer-widgets' ] != 0 ) :
+// if( $uos_config[ 'genesis-footer-widgets' ] != 0 ) :
 //
 //   add_theme_support( 'genesis-footer-widgets', $footer_widgets );
 //

@@ -4,12 +4,12 @@
  *
  * Template Name: Landing
  *
- * @package      StarterTheme
+ * @package      UOStheme
  * @author       P&P Creative
  * @since        1.0.0
 **/
 
-add_filter( 'body_class', 'starter_theme_landing_body_class' );
+add_filter( 'body_class', 'uos_landing_body_class' );
 /**
  * Adds landing page body class.
  *
@@ -18,7 +18,7 @@ add_filter( 'body_class', 'starter_theme_landing_body_class' );
  * @param array $classes Original body classes.
  * @return array Modified body classes.
  */
-function starter_theme_landing_body_class( $classes ) {
+function uos_landing_body_class( $classes ) {
 
 	$classes[] = 'landing-page';
 	return $classes;
@@ -28,13 +28,13 @@ function starter_theme_landing_body_class( $classes ) {
 // Removes Skip Links.
 remove_action( 'genesis_before_header', 'genesis_skip_links', 5 );
 
-add_action( 'wp_enqueue_scripts', 'starter_theme_dequeue_skip_links' );
+add_action( 'wp_enqueue_scripts', 'uos_dequeue_skip_links' );
 /**
  * Dequeues Skip Links Script.
  *
  * @since 1.0.0
  */
-function starter_theme_dequeue_skip_links() {
+function uos_dequeue_skip_links() {
 
 	wp_dequeue_script( 'skip-links' );
 

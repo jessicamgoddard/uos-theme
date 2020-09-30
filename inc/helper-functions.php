@@ -2,14 +2,14 @@
 /**
  * Helper Functions
  *
- * @package      StarterTheme
+ * @package      UOStheme
  * @author       P&P Creative
  * @since        1.0.0
 **/
 
 
 // Gets the first term attached to a post
-function starter_theme_first_term( $args = [] ) {
+function uos_first_term( $args = [] ) {
 
 	$defaults = [
 		'taxonomy'	=> 'category',
