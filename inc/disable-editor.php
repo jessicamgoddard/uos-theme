@@ -15,6 +15,7 @@ function uos_disable_editor( $id = false ) {
 	);
 
 	$excluded_ids = array(
+		84
 	);
 
 	if( empty( $id ) )
