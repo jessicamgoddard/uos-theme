@@ -1,0 +1,173 @@
+.site-header {
+  background-image: radial-gradient(closest-side at 50% 50%, #41328E 0%, #211851 35%, #0E0929 63%, #070319 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200% 200%;
+  position: fixed;
+  transition: $transition;
+  width: 100%;
+  z-index: 9999999;
+
+  & > .wrap {
+    display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    padding: $px-to-rem-15;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .title-area {
+    transition: $transition;
+    width: 55px;
+  }
+
+  .menu-toggle {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 0;
+    height: 0;
+    margin: 0;
+    overflow: visible;
+    padding: 2.5rem 1.5rem 0;
+    position: relative;
+
+    &,
+    &::before,
+    &::after {
+      transition: $transition;
+    }
+
+    &::before,
+    &::after {
+      border-bottom: 1px solid #fff;
+      content: '';
+      display: block;
+      height: 0;
+      position: absolute;
+        top: 0;
+        left: 0;
+      width: 100%;
+    }
+
+    &::after {
+      top: 1.25rem;
+    }
+
+    &:hover,
+    &:focus {
+      outline: 1px solid #fff;
+      outline-offset: 10px;
+    }
+
+    &.activated {
+      border-bottom-color: transparent;
+    }
+
+    &.activated::before {
+      transform: translateY(1.25rem) rotate(45deg);
+    }
+
+    &.activated::after {
+      transform: rotate(-45deg);
+    }
+
+  }
+
+  .nav-primary {
+    clear: right;
+    flex-basis: 100%;
+    transition: $transition;
+    width: 100%;
+
+    .menu-item {
+      text-align: center;
+
+      a {
+        color: #fff;
+        padding: $px-to-rem-15 $px-to-rem-30;
+      }
+
+    }
+
+    .sub-menu-toggle {
+      color: #fff;
+      float: none;
+      margin-top: -15px;
+      position: relative;
+    }
+
+    .sub-menu {
+      padding-left: 0;
+
+      .menu-item {
+
+        a {
+          background-color: transparent;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.hide-header-elements:not(.menu-is-activated) .site-header {
+  background-image: none;
+
+  .title-area {
+    opacity: 0;
+  }
+
+}
+
+@media only screen and (min-width:$breakpoint-standard) {
+
+  .site-header {
+    padding-left: $px-to-rem-90;
+    padding-right: $px-to-rem-90;
+
+
+    .menu-toggle,
+    .sub-menu-toggle {
+      cursor: pointer;
+      display: block;
+      visibility: visible;
+    }
+
+    .nav-primary {
+      display: none;
+
+      .menu-item {
+        display: block;
+      }
+
+      .sub-menu {
+        border-top: 0;
+        left: auto;
+        opacity: 1;
+        position: relative;
+        width: auto;
+
+        a {
+          border: 0;
+          width: auto;
+        }
+
+        .sub-menu {
+          margin: 0;
+        }
+
+      }
+
+    }
+
+  }
+
+}

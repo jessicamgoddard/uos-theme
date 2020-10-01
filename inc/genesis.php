@@ -19,8 +19,8 @@ remove_action( 'admin_init', 'genesis_add_taxonomy_seo_options' );
 // Moves navigation menus
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
-add_action( 'genesis_header', 'genesis_do_subnav' );
 add_action( 'genesis_header', 'genesis_do_nav' );
+// add_action( 'genesis_header', 'genesis_do_subnav' );
 
 // Wraps front page title in h1
 add_filter( 'genesis_site_title_wrap', function( $wrap ) { return is_front_page() ? 'h1' : $wrap; } );
@@ -54,7 +54,7 @@ function uos_add_search_to_menu( $menu, $args ) {
 }
 
 // Adds hero image to page and posts
-add_action( 'genesis_entry_header', 'uos_add_page_post_hero_image', 5 );
+// add_action( 'genesis_entry_header', 'uos_add_page_post_hero_image', 5 );
 function uos_add_page_post_hero_image() {
 
   if( ( is_page() || is_singular() ) && has_post_thumbnail() ) :
@@ -87,7 +87,7 @@ function uos_add_page_post_hero_image() {
 
 }
 
-add_action( 'genesis_entry_header', 'uos_add_header_wrap_close', 10 );
+// add_action( 'genesis_entry_header', 'uos_add_header_wrap_close', 10 );
 function uos_add_header_wrap_close() {
 
   if( is_page() || is_singular() ) :

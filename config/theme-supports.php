@@ -27,29 +27,44 @@ return [
     [
       'name'        => __( 'Small' ),
       'shortName'   => __( 'S' ),
-      'size'        => 14,
+      'size'        => 16,
       'slug'        => 'small',
     ],
     [
       'name'        => __( 'Normal' ),
       'shortName'   => __( 'M' ),
-      'size'        => 18,
+      'size'        => 20,
       'slug'        => 'normal',
     ],
     [
       'name'        => __( 'Large' ),
       'shortName'   => __( 'L' ),
-      'size'        => 22,
+      'size'        => 24,
       'slug'        => 'large',
     ],
     [
       'name'        => __( 'Extra Large' ),
       'shortName'   => __( 'XL' ),
-      'size'        => 26,
+      'size'        => 28,
       'slug'        => 'extra-large',
     ],
   ],
   'editor-color-palette'        => [
+    [
+      'name'  => __( 'Dark Purple' ),
+      'slug'  => 'dark-purple',
+      'color' => '#211851',
+    ],
+    [
+      'name'  => __( 'Light Purple' ),
+      'slug'  => 'light-purple',
+      'color' => '#45388E',
+    ],
+    [
+      'name'  => __( 'Gold' ),
+      'slug'  => 'gold',
+      'color' => '#B98505',
+    ],
     [
       'name'  => __( 'White' ),
       'slug'  => 'white',
@@ -58,12 +73,17 @@ return [
     [
       'name'  => __( 'Light Gray' ),
       'slug'  => 'light-gray',
-      'color' => '#F7F7F7',
+      'color' => '#C7C9CB',
+    ],
+    [
+      'name'  => __( 'Gray' ),
+      'slug'  => 'gray',
+      'color' => '#716F6F',
     ],
     [
       'name'  => __( 'Black' ),
       'slug'  => 'black',
       'color' => '#000000',
     ],
-  ]
+  ],
 ];

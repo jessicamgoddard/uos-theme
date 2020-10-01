@@ -7,17 +7,43 @@
  * @since        1.0.0
 **/
 
-
+add_action( 'genesis_after_header', 'uos_front_page_hero' );
 function uos_front_page_hero() {
 
+	$featured_image = get_the_post_thumbnail_url();
 	$hero_content_1 = get_field( 'hero_content_1' );
 	$hero_content_2 = get_field( 'hero_content_2' );
+
+	if( $hero_content_1 || $hero_content_2 ) :
+		?>
+		<div class="page-hero">
+			<div class="page-hero-inner">
+				<?php if( $hero_content_1 ) : ?>
+					<div class="hero-content-1">
+						<?= $hero_content_1 ?>
+					</div>
+				<?php endif; // $hero_content_1 ?>
+				<?php if( $hero_content_2 ) : ?>
+					<div class="hero-content-2">
+						<?= $hero_content_2 ?>
+					</div>
+				<?php endif; // $hero_content_2 ?>
+			</div>
+			<div class="page-hero-background">
+				<?php if( $featured_image ) : ?>
+					<div class="page-hero-image" style="background-image: url(<?= $featured_image ?>)"></div>
+				<?php endif; // $featured_image ?>
+			</div>
+		</div>
+		<?php
+	endif;
 
 }
 
 add_action( 'genesis_entry_content', 'uos_front_page_fields' );
 function uos_front_page_fields() {
 
+	$page_intro_heading = get_field( 'section_1_heading' );
 	$page_intro = get_field( 'section_1' );
 	$background_1 = get_field( 'background_1' );
 	$section_1_image = get_field( 'image_and_text_image' );
@@ -36,11 +62,20 @@ function uos_front_page_fields() {
 	$vertical_text_2 = get_field( 'vertical_text_2' );
 	$final_content = get_field( 'final_content' );
 
-	if( $page_intro ) :
+	if( $page_intro_heading || $page_intro ) :
 		?>
 		<div class="page-intro">
 			<div class="page-intro-inner inner">
-				<?= $page_intro ?>
+				<?php if( $page_intro_heading ) : ?>
+					<h2 class="page-intro-heading alignwide">
+						<?= $page_intro_heading ?>
+					</h2>
+				<?php endif; // $page_intro_heading ?>
+				<?php if( $page_intro ) : ?>
+					<div class="page-intro-text">
+						<?= $page_intro ?>
+					</div>
+				<?php endif; // $page_intro ?>
 			</div>
 			<?php if( $background_1 ) : ?>
 				<div class="background background-1">
@@ -104,11 +139,6 @@ function uos_front_page_fields() {
 		?>
 		<div class="section-3 section">
 			<div class="section-3-inner inner">
-				<?php if( $background_2 ) : ?>
-					<div class="background-2 background">
-						<img src="<?= $background_2['url'] ?>" alt="<?= $background_2['alt'] ?>" />
-					</div>
-				<?php endif; // $background_2 ?>
 				<div class="section-3-text">
 					<?php if( $section_3_heading ) : ?>
 						<h2><?= $section_3_heading ?></h2>
@@ -118,6 +148,11 @@ function uos_front_page_fields() {
 					</div>
 				</div>
 			</div>
+			<?php if( $background_2 ) : ?>
+				<div class="background-2 background">
+					<img src="<?= $background_2['url'] ?>" alt="<?= $background_2['alt'] ?>" />
+				</div>
+			<?php endif; // $background_2 ?>
 		</div>
 		<?php
 	endif;

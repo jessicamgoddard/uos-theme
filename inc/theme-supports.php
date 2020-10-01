@@ -8,12 +8,12 @@
 **/
 
 
-$uos_config = genesis_get_config( 'theme-supports' );
+$theme_supports = genesis_get_config( 'theme-supports' );
 
 // Sets theme supports based on config options
-if( $uos_config[ 'theme-supports' ] ) {
+if( $theme_supports ) {
 
-  foreach( $uos_config[ 'theme-supports' ] as $theme_support => $value ) {
+  foreach( $theme_supports as $theme_support => $value ) {
 
     if( false === $value ) :
 

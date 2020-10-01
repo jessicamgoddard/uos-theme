@@ -21,18 +21,18 @@ return [
     'script'  => [
       'mainMenu'    => __( 'Menu' ),
       'menuClasses' => [
-        // 'others'  => [ '.nav-primary' ],
-        'combine'  => [ '.nav-secondary', '.nav-primary' ],
+        'others'  => [ '.nav-primary' ],
+        // 'combine'  => [ '.nav-secondary', '.nav-primary' ],
       ]
     ],
     'extras'  => [
-      'media_query_width' => '960px',
+      'media_query_width' => '990px',
     ],
   ],
   'custom-units'            => [ 'px', 'rem', 'em', 'vh', 'vw' ],
   'reduce-secondary-nav'    => true,
-  'remove-sidebars'             => [ 'sidebar', 'sidebar-alt', 'header-right', 'after-entry' ],
-  'genesis-footer-widgets'      => 3,
-  'remove-layouts'              => [ 'content-sidebar-sidebar', 'sidebar-content-sidebar', 'sidebar-sidebar-content', 'sidebar-content', 'content-sidebar' ],
-  'force-full-width'            => true,
+  'remove-sidebars'         => [ 'sidebar', 'sidebar-alt', 'header-right', 'after-entry' ],
+  'genesis-footer-widgets'  => 2,
+  'remove-layouts'          => [ 'content-sidebar-sidebar', 'sidebar-content-sidebar', 'sidebar-sidebar-content', 'sidebar-content', 'content-sidebar' ],
+  'force-full-width'        => true,
 ];
