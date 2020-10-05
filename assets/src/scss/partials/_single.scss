@@ -1,0 +1,54 @@
+.single {
+
+  .content {
+    padding-top: 15px;
+  }
+
+  .entry-header {
+    display: flex;
+      flex-direction: column-reverse;
+    margin-bottom: $px-to-rem-60;
+
+    .entry-meta {
+      color: $gold;
+      font-family: $font-miller;
+      font-size: 1.375rem;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    .entry-title {
+      font-size: $font-size-h3-mobile;
+    }
+
+  }
+
+}
+
+.adjacent-entry-pagination {
+  font-family: $font-miller;
+  font-weight: 700;
+  margin: $px-to-rem-90 0;
+
+  .pagination-label {
+    color: $gold;
+    display: block;
+    font-size: 1.125rem;
+    text-transform: lowercase;
+  }
+
+  a {
+    color: $light-purple;
+    font-size: 1.375rem;
+    text-decoration: none;
+  }
+
+}
+
+@media only screen and (min-width: $breakpoint-standard) {
+
+  .single .entry-header .entry-title {
+    font-size: $font-size-h3;
+  }
+
+}

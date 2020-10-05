@@ -16,6 +16,12 @@ return [
       'height'  => '300',
       'crop'    => true
     ],
+    [
+      'name'    => 'featured',
+      'width'   => '800',
+      'height'  => '500',
+      'crop'    => true
+    ],
   ],
   'responsive-menus'             => [
     'script'  => [

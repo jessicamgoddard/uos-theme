@@ -9,7 +9,7 @@
 
 // Search page header
 function uos_search_header() {
-	do_action( 'genesis_archive_title_descriptions', 'Search Results', get_search_form( false ), 'search-description' );
+	do_action( 'genesis_archive_title_descriptions', 'Search Results', '', 'search-description' );
 }
 add_action( 'genesis_before_loop', 'uos_search_header', 15 );
 

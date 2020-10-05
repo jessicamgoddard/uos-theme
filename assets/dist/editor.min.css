@@ -196,32 +196,35 @@ h6 {
 .site-inner {
   padding-top: 150px; }
 
-.entry-content {
+.content {
   margin-left: auto;
   margin-right: auto;
   max-width: 45.625rem;
   padding: 60px 15px;
   position: relative; }
-  .entry-content .alignfull {
+  .content .alignfull {
     margin-left: -15px;
     margin-right: -15px; }
-  .entry-content .background {
+  .content .background {
     opacity: .75;
     position: absolute;
     z-index: -1; }
-  .entry-content .background-default {
+  .content .background-default {
     top: 8rem;
     right: -40vw;
     left: 40vw;
     max-width: 600px;
     z-index: -1; }
-  .entry-content .vertical-text {
+  .content .vertical-text {
     display: none;
     z-index: -1; }
+  .content .footer-logo {
+    margin-top: 15vh;
+    max-width: 700px; }
 
 @media only screen and (min-width: 45.625rem) {
-  .entry-content .alignfull,
-  .entry-content .alignwide {
+  .content .alignfull,
+  .content .alignwide {
     margin-left: calc( 50% - 50vw);
     margin-right: calc( 50% - 50vw); } }
 
@@ -240,14 +243,14 @@ h6 {
     font-size: 1.333rem; }
   h6 {
     font-size: 1rem; }
-  .entry-content .alignwide {
+  .content .alignwide {
     margin-left: -8.125rem;
     margin-right: -8.125rem;
     max-width: 61.875rem; }
-  .entry-content .background-default {
+  .content .background-default {
     right: calc( 22.8125rem - 225px - 50vw);
     left: auto; }
-  .entry-content .vertical-text {
+  .content .vertical-text {
     color: #C7C9CB;
     display: block;
     font-size: 1.5625rem;
@@ -258,7 +261,7 @@ h6 {
     left: calc( 22.8125rem + 3rem - 50vw);
     text-transform: uppercase;
     transform: translateX(-50%) rotate(-90deg); }
-    .entry-content .vertical-text.vertical-text-2 {
+    .content .vertical-text.vertical-text-2 {
       top: 175rem;
       right: calc( 22.8125rem + 3rem - 50vw);
       left: auto;

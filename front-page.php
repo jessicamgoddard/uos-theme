@@ -57,7 +57,6 @@ function uos_front_page_fields() {
 	$section_4_heading = get_field( 'section_4_heading' );
 	$section_4_text = get_field( 'section_4_text' );
 	$background_3 = get_field( 'background_3' );
-	$final_content = get_field( 'final_content' );
 
 	if( $page_intro_heading || $page_intro ) :
 		?>
@@ -164,15 +163,6 @@ function uos_front_page_fields() {
 			<?php endif; // $background_3 ?>
 		</div>
 	<?php endif; // $section_4
-
-	if( $final_content ) :
-		?>
-		<div class="final-content">
-			<div class="final-content-inner inner">
-				<?= $final_content ?>
-			</div>
-		</div>
-	<?php endif; // $final_content
 
 }
 

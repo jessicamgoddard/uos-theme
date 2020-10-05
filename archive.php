@@ -21,12 +21,16 @@ function uos_blog_archive_body_class( $classes ) {
 // Adds div around articles
 add_action( 'genesis_before_while', 'kyosa_articles_div_start' );
 function kyosa_articles_div_start() {
-	echo '<div class="articles">';
+	echo '<div class="articles alignwide">';
 }
 
 add_action( 'genesis_after_endwhile', 'kyosa_articles_div_end', 5 );
 function kyosa_articles_div_end() {
 	echo '</div>';
 }
+
+// Move post image outside of entry content
+remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
+add_action( 'genesis_before_entry_content', 'genesis_do_post_image' );
 
 genesis();
