@@ -1,0 +1,26 @@
+.button,
+button {
+  border: 1px solid $light-purple;
+  color: $dark-purple;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 1;
+  padding: $px-to-rem-15 $px-to-rem-30;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button,
+button {
+
+  &:hover,
+  &:focus {
+    background-color: $light-purple;
+    color: #fff;
+  }
+
+}
+
+.button + .button {
+  margin-left: $px-to-rem-15;
+}

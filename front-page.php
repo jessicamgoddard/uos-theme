@@ -45,21 +45,18 @@ function uos_front_page_fields() {
 
 	$page_intro_heading = get_field( 'section_1_heading' );
 	$page_intro = get_field( 'section_1' );
-	$background_1 = get_field( 'background_1' );
 	$section_1_image = get_field( 'image_and_text_image' );
 	$section_1_text = get_field( 'image_and_text_text' );
 	$section_2_text = get_field( 'mosaic_and_text_text' );
 	$mosaic_image_1 = get_field( 'mosaic_and_text_image_1' );
 	$mosaic_image_2 = get_field( 'mosaic_and_text_image_2' );
 	$mosaic_image_3 = get_field( 'mosaic_and_text_image_3' );
-	$vertical_text_1 = get_field( 'vertical_text_1' );
 	$background_2 = get_field( 'background_2' );
 	$section_3_heading = get_field( 'section_3_heading' );
 	$section_3_text = get_field( 'section_3_text' );
 	$section_4_heading = get_field( 'section_4_heading' );
 	$section_4_text = get_field( 'section_4_text' );
 	$background_3 = get_field( 'background_3' );
-	$vertical_text_2 = get_field( 'vertical_text_2' );
 	$final_content = get_field( 'final_content' );
 
 	if( $page_intro_heading || $page_intro ) :
@@ -77,18 +74,13 @@ function uos_front_page_fields() {
 					</div>
 				<?php endif; // $page_intro ?>
 			</div>
-			<?php if( $background_1 ) : ?>
-				<div class="background background-1">
-					<img src="<?= $background_1['url'] ?>" alt="<?= $background_1['alt'] ?>" />
-				</div>
-			<?php endif; //$background_1 ?>
 		</div>
 		<?php
 	endif; // $page_intro
 
 	if( $section_1_image || $section_1_text ) :
 		?>
-		<div class="section-1 section">
+		<div class="section-1 section alignwide">
 			<div class="section-1-inner inner">
 				<?php if( $section_1_image ) : ?>
 					<div class="section-1-image">
@@ -107,7 +99,7 @@ function uos_front_page_fields() {
 
 	if( $section_2_text ) :
 		?>
-		<div class="section-2 section">
+		<div class="section-2 section alignwide">
 			<div class="section-2-inner inner">
 				<div class="section-2-text">
 					<?= $section_2_text ?>
@@ -126,11 +118,6 @@ function uos_front_page_fields() {
 					</div>
 				<?php endif; // $mosaic_image ?>
 			</div>
-			<?php if( $vertical_text_1 ) : ?>
-				<div class="vertical-text-1 vertical-text">
-					<?= $vertical_text_1 ?>
-				</div>
-			<?php endif; // $vertical_text_1 ?>
 		</div>
 		<?php
 	endif; // $section_2
@@ -169,17 +156,12 @@ function uos_front_page_fields() {
 						<?= $section_4_text ?>
 					</div>
 				</div>
-				<?php if( $background_3 ) : ?>
-					<div class="background-3 background">
-						<img src="<?= $background_3['url'] ?>" alt="<?= $background_3['alt'] ?>" />
-					</div>
-				<?php endif; // $background_3 ?>
 			</div>
-			<?php if( $vertical_text_2 ) : ?>
-				<div class="vertical-text-2 vertical-text">
-					<?= $vertical_text_2 ?>
+			<?php if( $background_3 ) : ?>
+				<div class="background-3 background">
+					<img src="<?= $background_3['url'] ?>" alt="<?= $background_3['alt'] ?>" />
 				</div>
-			<?php endif; // $vertical_text_2 ?>
+			<?php endif; // $background_3 ?>
 		</div>
 	<?php endif; // $section_4
 

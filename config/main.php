@@ -8,7 +8,7 @@
 **/
 
 return [
-  'acf-options-page'  => false,
+  'acf-options-page'  => true,
   'image-sizes'       => [
     [
       'name'    => 'medium-square',
