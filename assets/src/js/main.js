@@ -1,7 +1,7 @@
 const homePageSiteHeader = () => {
 
   const homePage = document.querySelector( 'body.home' );
-  const pageHero = document.querySelector( '.page-hero' );
+  const pageHero = document.querySelector( '.home .page-hero' );
 
   if( !homePage && !pageHero ) return;
 
@@ -64,34 +64,35 @@ const teamPageModals = () => {
 
     teamMembersWithBios[i].addEventListener( 'click', function(e) {
       // If clicked, display modal
-      const modal = this.parentNode.querySelector( '.bio-modal' );
-      const bio = modal.querySelector( '.bio' );
       // Copy photo, name, and role from listing
-      // Add button to close modal
       const photo = this.querySelector( '.photo' ).cloneNode( true );
       const name = this.querySelector( '.name' ).cloneNode( true );
       const role = this.querySelector( '.role' ).cloneNode( true );
+      const bio = this.querySelector( '.bio' ).cloneNode( true );
+
+      // Create modal
+      const bioModal = document.createElement( 'div' );
+      bioModal.classList.add( 'bio-modal' );
 
       const closeBtn = document.createElement( 'button' );
       closeBtn.innerText = 'Close';
 
-      modal.insertBefore( closeBtn, bio );
-      modal.insertBefore( photo, bio );
+      bioModal.appendChild( closeBtn );
+      bioModal.appendChild( photo );
+      bioModal.appendChild( bio );
       bio.insertBefore( role, bio.firstChild );
       bio.insertBefore( name, bio.firstChild );
 
-      modal.classList.add( 'is-activated' );
+      // Add modal to page
+      const siteContainer = document.querySelector( '.site-container' );
+
+      siteContainer.appendChild( bioModal );
 
       // Close modal if button is clicked
       closeBtn.addEventListener( 'click', function(e) {
         e.preventDefault();
 
-        modal.classList.remove( 'is-activated' );
-
-        photo.remove();
-        name.remove();
-        role.remove();
-        closeBtn.remove();
+        bioModal.remove();
 
       }, false );
 

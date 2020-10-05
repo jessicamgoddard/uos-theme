@@ -7,6 +7,17 @@
  * @since        1.0.0
 **/
 
+add_action( 'genesis_after_header', 'uos_page_hero' );
+function uos_page_hero() {
+
+  if( has_post_thumbnail() && !is_front_page() ) :
+    ?>
+    <div class="page-hero" style="background-image: url(<?= get_the_post_thumbnail_url() ?>)"></div>
+    <?php
+  endif;
+
+}
+
 add_action( 'genesis_entry_content', 'uos_icon_background', 12 );
 function uos_icon_background() {
 

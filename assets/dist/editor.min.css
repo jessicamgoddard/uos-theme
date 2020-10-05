@@ -190,33 +190,34 @@ h6 {
   font-size: 1rem; }
 
 .site-container {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .site-inner {
-  padding-top: 150px;
-  position: relative; }
-  .site-inner .background {
-    opacity: .75;
-    position: absolute;
-    z-index: -1; }
-  .site-inner .background-default {
-    top: 19rem;
-    right: -40vw;
-    left: 40vw;
-    max-width: 600px;
-    z-index: -1; }
-  .site-inner .vertical-text {
-    display: none;
-    z-index: -1; }
+  padding-top: 150px; }
 
 .entry-content {
   margin-left: auto;
   margin-right: auto;
   max-width: 45.625rem;
-  padding: 60px 15px; }
+  padding: 60px 15px;
+  position: relative; }
   .entry-content .alignfull {
     margin-left: -15px;
     margin-right: -15px; }
+  .entry-content .background {
+    opacity: .75;
+    position: absolute;
+    z-index: -1; }
+  .entry-content .background-default {
+    top: 8rem;
+    right: -40vw;
+    left: 40vw;
+    max-width: 600px;
+    z-index: -1; }
+  .entry-content .vertical-text {
+    display: none;
+    z-index: -1; }
 
 @media only screen and (min-width: 45.625rem) {
   .entry-content .alignfull,
@@ -239,30 +240,29 @@ h6 {
     font-size: 1.333rem; }
   h6 {
     font-size: 1rem; }
-  .site-inner .background-default {
-    top: 20rem;
-    right: -200px;
+  .entry-content .alignwide {
+    margin-left: -8.125rem;
+    margin-right: -8.125rem;
+    max-width: 61.875rem; }
+  .entry-content .background-default {
+    right: calc( 22.8125rem - 225px - 50vw);
     left: auto; }
-  .site-inner .vertical-text {
+  .entry-content .vertical-text {
     color: #C7C9CB;
     display: block;
     font-size: 1.5625rem;
     font-weight: 300;
     letter-spacing: .37em;
     position: absolute;
-    top: 62rem;
-    left: 3.75rem;
+    top: 90rem;
+    left: calc( 22.8125rem + 3rem - 50vw);
     text-transform: uppercase;
     transform: translateX(-50%) rotate(-90deg); }
-    .site-inner .vertical-text.vertical-text-2 {
-      top: 124rem;
-      right: 3.75rem;
+    .entry-content .vertical-text.vertical-text-2 {
+      top: 175rem;
+      right: calc( 22.8125rem + 3rem - 50vw);
       left: auto;
-      transform: translateX(50%) rotate(-90deg); }
-  .entry-content .alignwide {
-    margin-left: -8.125rem;
-    margin-right: -8.125rem;
-    max-width: 61.875rem; } }
+      transform: translateX(50%) rotate(-90deg); } }
 
 .button,
 button {

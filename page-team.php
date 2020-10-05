@@ -45,7 +45,7 @@ function uos_add_team_members() {
 				$name = get_the_title();
 				$photo = get_the_post_thumbnail( get_the_id(), 'medium-square' );
 				$role = get_field( 'role' );
-				$bio = get_the_content();
+				$bio = apply_filters( 'the_content', get_the_content() );
 				?>
 				<div class="team-member">
 
@@ -53,15 +53,8 @@ function uos_add_team_members() {
 						<?php if( $photo ) echo '<div class="photo">' . $photo . '</div>'; ?>
 						<?php if( $name ) echo '<h3 class="name">' . $name . '</h2>'; ?>
 						<?php if( $role ) echo '<h4 class="role">' . $role . '</h3>'; ?>
+						<?php if( $bio ) echo '<div class="bio">' . $bio . '</div>'; ?>
 					</div>
-
-					<?php if( $bio ) : ?>
-						<div class="bio-modal">
-							<div class="bio">
-								<?= the_content() ?>
-							</div>
-						</div>
-					<?php endif; ?>
 
 				</div>
 				<?php
