@@ -55,9 +55,56 @@ const homePageSiteHeader = () => {
 
 }
 
+const teamPageModals = () => {
+
+  // Listen for click on all team members with bios
+  const teamMembersWithBios = document.querySelectorAll( '.team-member .details.has-bio' );
+
+  for( let i = 0; i < teamMembersWithBios.length; i++ ) {
+
+    teamMembersWithBios[i].addEventListener( 'click', function(e) {
+      // If clicked, display modal
+      const modal = this.parentNode.querySelector( '.bio-modal' );
+      const bio = modal.querySelector( '.bio' );
+      // Copy photo, name, and role from listing
+      // Add button to close modal
+      const photo = this.querySelector( '.photo' ).cloneNode( true );
+      const name = this.querySelector( '.name' ).cloneNode( true );
+      const role = this.querySelector( '.role' ).cloneNode( true );
+
+      const closeBtn = document.createElement( 'button' );
+      closeBtn.innerText = 'Close';
+
+      modal.insertBefore( closeBtn, bio );
+      modal.insertBefore( photo, bio );
+      bio.insertBefore( role, bio.firstChild );
+      bio.insertBefore( name, bio.firstChild );
+
+      modal.classList.add( 'is-activated' );
+
+      // Close modal if button is clicked
+      closeBtn.addEventListener( 'click', function(e) {
+        e.preventDefault();
+
+        modal.classList.remove( 'is-activated' );
+
+        photo.remove();
+        name.remove();
+        role.remove();
+        closeBtn.remove();
+
+      }, false );
+
+    }, false );
+
+  }
+
+}
+
 window.addEventListener( 'load', () => {
 
   homePageSiteHeader();
+  teamPageModals();
 
 } );
 

@@ -7,7 +7,7 @@
  * @since        1.0.0
 **/
 
-add_action( 'genesis_entry_content', 'uos_icon_background' );
+add_action( 'genesis_entry_content', 'uos_icon_background', 12 );
 function uos_icon_background() {
 
   $background_image = get_field( 'background_image', 'option' );
