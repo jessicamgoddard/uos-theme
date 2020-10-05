@@ -14,6 +14,7 @@ return [
   'disable-custom-colors'       => true,
   'genesis-responsive-viewport' => true,
   'genesis-custom-logo'         => true,
+  'genesis-footer-widgets'  => 2,
   'html5'                       => [ 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption', 'script', 'style', 'navigation-widgets' ],
   'genesis-structural-wraps'    => [ 'header', 'menu-secondary', 'site-inner', 'footer-widgets', 'footer' ],
   'genesis-accessibility'       => [ '404-page', 'drop-down-menu', 'headings', 'rems', 'search-form', 'skip-links', 'screen-reader-text' ],

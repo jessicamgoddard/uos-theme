@@ -1,0 +1,46 @@
+.footer-widgets,
+.site-footer {
+  font-size: .75rem;
+  font-weight: 200;
+  padding: $px-to-rem-15 $px-to-rem-15 0;
+  text-align: center;
+  text-transform: uppercase;
+
+  p {
+    margin-bottom: $px-to-rem-15 !important;
+  }
+
+}
+
+.footer-widgets {
+  background-color: $dark-purple;
+  color: #fff;
+
+  .widget-area:last-of-type .widget:last-of-type {
+    margin-bottom: 0;
+  }
+
+}
+
+@media only screen and (min-width: $breakpoint-standard) {
+
+  .footer-widgets {
+    padding: $px-to-rem-30;
+
+    .widget {
+      margin-bottom :0;
+    }
+    
+  }
+
+  .footer-widgets-1 {
+    float: left;
+    text-align: left;
+  }
+
+  .footer-widgets-2 {
+    float: right;
+    text-align: right;
+  }
+
+}

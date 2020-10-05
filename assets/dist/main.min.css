@@ -1085,6 +1085,10 @@ body {
 a {
   color: #211851; }
 
+a:hover,
+a:focus {
+  text-decoration: none; }
+
 h1,
 h2,
 h3,
@@ -1472,6 +1476,35 @@ button:focus {
 
 .button + .button {
   margin-left: 0.9375rem; }
+
+.footer-widgets,
+.site-footer {
+  font-size: .75rem;
+  font-weight: 200;
+  padding: 0.9375rem 0.9375rem 0;
+  text-align: center;
+  text-transform: uppercase; }
+  .footer-widgets p,
+  .site-footer p {
+    margin-bottom: 0.9375rem !important; }
+
+.footer-widgets {
+  background-color: #211851;
+  color: #fff; }
+  .footer-widgets .widget-area:last-of-type .widget:last-of-type {
+    margin-bottom: 0; }
+
+@media only screen and (min-width: 61.875rem) {
+  .footer-widgets {
+    padding: 1.875rem; }
+    .footer-widgets .widget {
+      margin-bottom: 0; }
+  .footer-widgets-1 {
+    float: left;
+    text-align: left; }
+  .footer-widgets-2 {
+    float: right;
+    text-align: right; } }
 
 .pp-brand-link {
   overflow: hidden;

@@ -32,7 +32,6 @@ return [
   'custom-units'            => [ 'px', 'rem', 'em', 'vh', 'vw' ],
   'reduce-secondary-nav'    => true,
   'remove-sidebars'         => [ 'sidebar', 'sidebar-alt', 'header-right', 'after-entry' ],
-  'genesis-footer-widgets'  => 2,
   'remove-layouts'          => [ 'content-sidebar-sidebar', 'sidebar-content-sidebar', 'sidebar-sidebar-content', 'sidebar-content', 'content-sidebar' ],
   'force-full-width'        => true,
 ];
