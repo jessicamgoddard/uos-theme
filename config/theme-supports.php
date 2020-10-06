@@ -20,7 +20,7 @@ return [
   'genesis-accessibility'       => [ '404-page', 'drop-down-menu', 'headings', 'rems', 'search-form', 'skip-links', 'screen-reader-text' ],
   'genesis-menus'               => [
     'primary'   => 'Primary Menu',
-    'secondary' => 'Secondary Menu',
+    // 'secondary' => 'Secondary Menu',
   ],
   'wp-block-styles'             => false,
   'editor-styles'               => true,

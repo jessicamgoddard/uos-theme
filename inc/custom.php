@@ -10,7 +10,7 @@
 add_action( 'genesis_after_header', 'uos_page_hero' );
 function uos_page_hero() {
 
-  if( is_front_page() || is_singular( 'post' ) ) return;
+  if( is_front_page() || is_singular( 'post' ) || is_singular( 'team_member' ) ) return;
 
   if( ( is_home() || is_archive() ) && has_post_thumbnail( get_option( 'page_for_posts' ) ) ) :
 

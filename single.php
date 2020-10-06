@@ -25,8 +25,31 @@ function uos_featured_image() {
 
 }
 
+add_action( 'genesis_entry_header', 'uos_team_member_role' );
+function uos_team_member_role() {
+
+	if( !is_singular( 'team_member' ) ) return;
+
+	if( get_field( 'role' ) ) :
+		echo '<p class="entry-role">' . get_field( 'role' ) . '</p>';
+	endif;
+
+}
+
+add_action( 'genesis_after_entry', 'uos_printfriendly' );
+function uos_printfriendly() {
+
+	if( !is_singular( 'post' ) ) return;
+
+	if( function_exists( 'pf_show_link' ) ):
+		echo pf_show_link();
+	endif;
+}
+
 add_action( 'genesis_after_entry', 'uos_adjacent_entry_nav' );
 function uos_adjacent_entry_nav() {
+
+	if( !is_singular( 'post' ) ) return;
 
   echo '<div class="alignwide">';
 
@@ -36,15 +59,20 @@ function uos_adjacent_entry_nav() {
 		'context' => 'adjacent-entry-pagination',
 	) );
 
-	echo '<div class="pagination-previous alignleft">';
-  echo '<span class="pagination-label">Previous Article</span>';
-	previous_post_link( '%link', '%title' );
-	echo '</div>';
-	echo '<div class="pagination-next alignright">';
-  echo '<span class="pagination-label">Next Article</span>';
-	next_post_link( '%link', '%title' );
-	echo '</div>';
-	echo '</div>';
+	if( get_previous_post_link() ) :
+		echo '<div class="pagination-previous alignleft">';
+	  echo '<span class="pagination-label">Previous Article</span>';
+		previous_post_link( '%link', '%title' );
+		echo '</div>';
+	endif;
+
+	if( get_next_post_link() ) :
+		echo '<div class="pagination-next alignright">';
+	  echo '<span class="pagination-label">Next Article</span>';
+		next_post_link( '%link', '%title' );
+		echo '</div>';
+		echo '</div>';
+	endif;
 
   echo '</div>';
 

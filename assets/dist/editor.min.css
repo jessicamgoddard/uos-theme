@@ -314,8 +314,8 @@ figcaption, .gallery-caption, .wp-caption-text {
 .wp-block-image {
   text-align: center; }
 
-.button,
-button,
+.content .button,
+.content button,
 .wp-block-button__link {
   background-color: transparent;
   border: 1px solid #45388E;
@@ -329,9 +329,9 @@ button,
   padding: 0.9375rem 1.875rem;
   text-decoration: none;
   text-transform: uppercase; }
-  .button:hover, .button:focus,
-  button:hover,
-  button:focus,
+  .content .button:hover, .content .button:focus,
+  .content button:hover,
+  .content button:focus,
   .wp-block-button__link:hover,
   .wp-block-button__link:focus {
     background-color: #45388E;

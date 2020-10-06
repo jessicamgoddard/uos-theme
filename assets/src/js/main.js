@@ -55,6 +55,14 @@ const homePageSiteHeader = () => {
 
 }
 
+document.querySelectorAll('[role="button"]').forEach(function(button) {
+    button.addEventListener('keydown', function(evt) {
+       if(evt.keyCode == 13 || evt.keyCode == 32) {
+           button.click();
+       }
+    });
+});
+
 const teamPageModals = () => {
 
   // Listen for click on all team members with bios

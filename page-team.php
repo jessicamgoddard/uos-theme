@@ -49,7 +49,7 @@ function uos_add_team_members() {
 				?>
 				<div class="team-member">
 
-					<div class="details <?php if( $bio ) echo 'has-bio'; ?>">
+					<div class="details <?php if( $bio ) echo 'has-bio'; ?>" <?php if( $bio ) echo 'tabindex="0" role="button"'; ?>>
 						<?php if( $photo ) echo '<div class="photo">' . $photo . '</div>'; ?>
 						<?php if( $name ) echo '<h3 class="name">' . $name . '</h2>'; ?>
 						<?php if( $role ) echo '<h4 class="role">' . $role . '</h3>'; ?>

@@ -5,17 +5,17 @@ Preparation:
   ☐ Get login for email marketing system
 
 Planning:
-  ☐ Custom block styles
-  ☐ Default block extensions
-  ☐ Custom block patterns
-  ☐ Custom blocks
-  ☐ Image sizes
+  ✔ Custom block styles @done(2020-10-06 09:10) @project(Planning)
+  ✔ Default block extensions @done(2020-10-06 09:10) @project(Planning)
+  ✔ Custom block patterns @done(2020-10-06 09:10) @project(Planning)
+  ✔ Custom blocks @done(2020-10-06 09:10) @project(Planning)
+  ✔ Image sizes @done(2020-10-06 09:10) @project(Planning)
   ✔ ACF usage @done(2020-09-30 15:15) @project(Planning)
-  ☐ Menu names and locations
-  ☐ Editor font sizes
-  ☐ Editor color palette
-  ☐ Widget areas
-  ☐ Page layouts
+  ✔ Menu names and locations @done(2020-10-06 09:10) @project(Planning)
+  ✔ Editor font sizes @done(2020-10-06 09:11) @project(Planning)
+  ✔ Editor color palette @done(2020-10-06 09:11) @project(Planning)
+  ✔ Widget areas @done(2020-10-06 09:11) @project(Planning)
+  ✔ Page layouts @done(2020-10-06 09:11) @project(Planning)
   ☐ Blog categories
   ☐ Default blog category
   ☐ Email marketing system
@@ -55,70 +55,70 @@ WordPress Setup:
   ✔ Check the "Discourage search engines from indexing site" box @done(2020-10-01 09:19) @project(WordPress Setup)
   ☐ Create blog categories
   ☐ Select default blog category
-  ☐ Create primary pages
-  ☐ Create menu(s)
+  ✔ Create primary pages @done(2020-10-06 09:12) @project(WordPress Setup)
+  ✔ Create menu(s) @done(2020-10-06 09:12) @project(WordPress Setup)
   ✔ Import existing content, plugins, and data @done(2020-10-01 09:19) @project(WordPress Setup)
 
 Basic Theme Development:
-  ☐ Create custom post types and taxonomies
-  ☐ Create custom fields
-  ☐ Create layouts for custom fields
-  ☐ Confirm all components are displaying
-      ☐ Header
-      ☐ Footer
-      ☐ Page
-      ☐ Blog
-      ☐ Category
-      ☐ Search
-      ☐ Post
-      ☐ Custom post types
-      ☐ Default blocks
-  ☐ Add styling
-      ☐ Default styles (body, headings, buttons, forms, layout)
-      ☐ Header
-      ☐ Footer
-      ☐ Page
-      ☐ Blog
-      ☐ Category
-      ☐ Search
-      ☐ Post
-      ☐ Custom post types
-      ☐ Default blocks
-  ☐ Confirm editor styling
-  ☐ Fix any items marked in the code
+  ✔ Create custom post types and taxonomies @done(2020-10-06 09:12) @project(Basic Theme Development)
+  ✔ Create custom fields @done(2020-10-06 09:12) @project(Basic Theme Development)
+  ✔ Create layouts for custom fields @done(2020-10-06 09:12) @project(Basic Theme Development)
+  ✔ Confirm all components are displaying @done(2020-10-06 09:20) @project(Basic Theme Development)
+      ✔ Header @done(2020-10-06 09:12) @project(Basic Theme Development)
+      ✔ Footer @done(2020-10-06 09:12) @project(Basic Theme Development)
+      ✔ Page @done(2020-10-06 09:12) @project(Basic Theme Development)
+      ✔ Blog @done(2020-10-06 09:12) @project(Basic Theme Development)
+      ✔ Category @done(2020-10-06 09:12) @project(Basic Theme Development)
+      ✔ Search @done(2020-10-06 09:12) @project(Basic Theme Development)
+      ✔ Post @done(2020-10-06 09:12) @project(Basic Theme Development)
+      ✔ Custom post types @done(2020-10-06 09:20) @project(Basic Theme Development)
+      ✔ Default blocks @done(2020-10-06 09:13) @project(Basic Theme Development)
+  ✔ Add styling @done(2020-10-06 09:20) @project(Basic Theme Development)
+      ✔ Default styles (body, headings, buttons, forms, layout) @done(2020-10-06 09:13) @project(Basic Theme Development)
+      ✔ Header @done(2020-10-06 09:13) @project(Basic Theme Development)
+      ✔ Footer @done(2020-10-06 09:13) @project(Basic Theme Development)
+      ✔ Page @done(2020-10-06 09:13) @project(Basic Theme Development)
+      ✔ Blog @done(2020-10-06 09:13) @project(Basic Theme Development)
+      ✔ Category @done(2020-10-06 09:13) @project(Basic Theme Development)
+      ✔ Search @done(2020-10-06 09:13) @project(Basic Theme Development)
+      ✔ Post @done(2020-10-06 09:13) @project(Basic Theme Development)
+      ✔ Custom post types @done(2020-10-06 09:20) @project(Basic Theme Development)
+      ✔ Default blocks @done(2020-10-06 09:13) @project(Basic Theme Development)
+  ✔ Confirm editor styling @done(2020-10-06 09:21) @project(Basic Theme Development)
+  ✔ Fix any items marked in the code @done(2020-10-06 09:21) @project(Basic Theme Development)
 
 Block Development:
-  ☐ Remove default block styles
-  ☐ Add custom block styles
-  ☐ Add styling (front-end and editor) for custom block styles
-  ☐ Add custom block patterns
-  ☐ Add styling (front-end and editor) for custom block patterns
-  ☐ Add extended functionality to default blocks
-  ☐ Add styling (front-end and editor) for extended functionality
-  ☐ Add custom blocks
-  ☐ Add styling (front-end and editor) for custom blocks
-  ☐ Fix any items marked in the code
-  ☐ Change breakpoint in default.scss media query
+  ✔ Remove default block styles @done(2020-10-06 09:20) @project(Block Development)
+  ✔ Add custom block styles @done(2020-10-06 09:20) @project(Block Development)
+  ✔ Add styling (front-end and editor) for custom block styles @done(2020-10-06 09:20) @project(Block Development)
+  ✔ Add custom block patterns @done(2020-10-06 09:20) @project(Block Development)
+  ✔ Add styling (front-end and editor) for custom block patterns @done(2020-10-06 09:20) @project(Block Development)
+  ✔ Add extended functionality to default blocks @done(2020-10-06 09:20) @project(Block Development)
+  ✔ Add styling (front-end and editor) for extended functionality @done(2020-10-06 09:20) @project(Block Development)
+  ✔ Add custom blocks @done(2020-10-06 09:20) @project(Block Development)
+  ✔ Add styling (front-end and editor) for custom blocks @done(2020-10-06 09:20) @project(Block Development)
+  ✔ Fix any items marked in the code @done(2020-10-06 09:20) @project(Block Development)
+  ✔ Change breakpoint in default.scss media query @done(2020-10-06 09:21) @project(Block Development)
 
 Site Build-out:
-  ☐ Create all mock-up pages using blocks
-  ☐ Modify styling as needed
+  ✔ Create all mock-up pages using blocks @done(2020-10-06 09:20) @project(Site Build-out)
+  ✔ Modify styling as needed @done(2020-10-06 09:20) @project(Site Build-out)
   ☐ Add content from client
-  ☐ Activate standard plugins
-      ☐ Antispam Bee
-      ☐ Cookie Notice for GDPR & CCPA
-      ☐ Indicate External Links
-      ☐ PrintFriendly
+  ✔ Activate standard plugins @done(2020-10-06 10:00) @project(Site Build-out)
+      ✔ Antispam Bee @done(2020-10-06 09:42) @project(Site Build-out)
+      ✔ Cookie Notice for GDPR & CCPA @done(2020-10-06 09:42) @project(Site Build-out)
+      ✔ Indicate External Links @done(2020-10-06 09:51) @project(Site Build-out)
+      ✔ PrintFriendly @done(2020-10-06 09:42) @project(Site Build-out)
       ☐ Redirection
-      ☐ Smush
-      ☐ WP Retina 2x
-      ☐ WP Sitemap Page
-      ☐ WP101
-      ☐ Yoast SEO
-  ☐ Setup cookie notice
-  ☐ Setup Smush
-  ☐ Setup WP Retina
-  ☐ Create sitemap page
+      ✔ Smush @done(2020-10-06 09:53) @project(Site Build-out)
+      ✔ WP Retina 2x @done(2020-10-06 09:55) @project(Site Build-out)
+      ✔ WP Sitemap Page @done(2020-10-06 09:59) @project(Site Build-out)
+      ✔ WP101 @done(2020-10-06 10:00) @project(Site Build-out)
+      ✔ Yoast SEO @done(2020-10-06 10:00) @project(Site Build-out)
+  ✔ Setup cookie notice @done(2020-10-06 10:00) @project(Site Build-out)
+  ✔ Setup Smush @done(2020-10-06 09:53) @project(Site Build-out)
+  ✔ Setup WP Retina @done(2020-10-06 09:59) @project(Site Build-out)
+  ✔ Create sitemap page @done(2020-10-06 09:59) @project(Site Build-out)
   ☐ Activate and setup common plugins
       ☐ GTranslate
       ☐ Official Facebook Pixel
@@ -137,7 +137,7 @@ QA:
 
 Testing:
   ☐ Accessibility
-      ☐ WAVE Accessibility Tester
+      ✔ WAVE Accessibility Tester @done(2020-10-06 10:18) @project(Testing)
       ☐ P&P Checklist - Initial Dev Check
   ☐ Windows/Chrome
   ☐ Windows/Firefox
