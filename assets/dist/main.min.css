@@ -1353,7 +1353,7 @@ body:not(.home) .page-hero {
 
 .articles .entry .entry-image-link {
   display: block;
-  margin-bottom: 15px;
+  margin: 0 auto 15px;
   max-width: 275px;
   text-align: center; }
 
@@ -1691,10 +1691,15 @@ body:not(.home) .page-hero {
       outline: 1px solid #fff;
       outline-offset: -10px; }
   .bio-modal .photo {
-    margin-right: 5.625rem; }
+    margin-right: 5.625rem;
+    margin-bottom: 1.875rem; }
   .bio-modal .name,
   .bio-modal .role {
     color: #fff; }
+  .bio-modal .role {
+    font-style: italic;
+    font-weight: 700;
+    margin-top: -5px; }
   .bio-modal .bio {
     padding-bottom: 5.625rem;
     position: relative; }
@@ -1807,13 +1812,12 @@ figcaption, .gallery-caption, .wp-caption-text {
   .footer-widgets p,
   .site-footer p {
     margin-bottom: 0.9375rem !important; }
-  .footer-widgets a,
-  .site-footer a {
-    color: #fff; }
 
 .footer-widgets {
   background-color: #211851;
   color: #fff; }
+  .footer-widgets a {
+    color: #fff; }
   .footer-widgets .widget-area:last-of-type .widget:last-of-type {
     margin-bottom: 0; }
 

@@ -42,10 +42,10 @@ Theme Setup:
   ✔ Set comment preferences @done(2020-10-01 09:15) @project(Theme Setup)
 
 SiteGround Setup:
-  ☐ Create sub-domain
-  ☐ Add SSL certificate
-  ☐ Install WordPress
-  ☐ Disable caching
+  ✔ Create sub-domain @done(2020-10-06 11:07) @project(SiteGround Setup)
+  ✔ Add SSL certificate @done(2020-10-06 11:07) @project(SiteGround Setup)
+  ✔ Install WordPress @done(2020-10-06 11:07) @project(SiteGround Setup)
+  ✔ Disable caching @done(2020-10-06 11:08) @project(SiteGround Setup)
 
 WordPress Setup:
   ✔ Set blog title and tagline @done(2020-10-01 09:15) @project(WordPress Setup)
@@ -124,35 +124,35 @@ Site Build-out:
       ☐ Official Facebook Pixel
 
 QA:
-  ☐ Mock-up pages
-  ☐ Header
-  ☐ Footer
-  ☐ Category
+  ✔ Mock-up pages @done(2020-10-06 10:59) @project(QA)
+  ✔ Header @done(2020-10-06 10:59) @project(QA)
+  ✔ Footer @done(2020-10-06 10:59) @project(QA)
+  ✔ Category @done(2020-10-06 10:59) @project(QA)
   ☐ Search
-  ☐ Search results
-  ☐ Custom post type archives
-  ☐ Default blocks
-  ☐ Pagination
+  ✔ Search results @done(2020-10-06 10:59) @project(QA)
+  ✔ Custom post type archives @done(2020-10-06 10:59) @project(QA)
+  ✔ Default blocks @done(2020-10-06 10:59) @project(QA)
+  ✔ Pagination @done(2020-10-06 10:59) @project(QA)
   ☐ Breadcrumbs
 
 Testing:
   ☐ Accessibility
       ✔ WAVE Accessibility Tester @done(2020-10-06 10:18) @project(Testing)
       ☐ P&P Checklist - Initial Dev Check
-  ☐ Windows/Chrome
-  ☐ Windows/Firefox
-  ☐ Windows/Edge
+  ✔ Windows/Chrome @done(2020-10-06 10:59) @project(Testing)
+  ✔ Windows/Firefox @done(2020-10-06 11:01) @project(Testing)
+  ✔ Windows/Edge @done(2020-10-06 11:02) @project(Testing)
   ☐ Windows/IE
-  ☐ Mac/Chrome
-  ☐ Mac/Firefox
-  ☐ Mac/Safari
-  ☐ iPhone/Safari
-  ☐ iPhone/Chrome
-  ☐ Android/Chrome
-  ☐ Revise and re-test
+  ✔ Mac/Chrome @done(2020-10-06 11:19) @project(Testing)
+  ✔ Mac/Firefox @done(2020-10-06 11:20) @project(Testing)
+  ✔ Mac/Safari @done(2020-10-06 11:21) @project(Testing)
+  ✔ iPhone/Safari @done(2020-10-06 11:29) @project(Testing)
+  ✔ iPhone/Chrome @done(2020-10-06 11:29) @project(Testing)
+  ✔ Android/Chrome @done(2020-10-06 11:26) @project(Testing)
+  ✔ Revise and re-test @done(2020-10-06 11:30) @project(Testing)
 
 Review:
-  ☐ Install WP Feedback
+  ✔ Install WP Feedback @done(2020-10-06 12:05) @project(Review)
   ☐ Revise as necessary
 
 Launch Prep:

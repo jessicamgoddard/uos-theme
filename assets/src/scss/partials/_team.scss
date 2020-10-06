@@ -103,11 +103,18 @@
 
   .photo {
     margin-right: $px-to-rem-90;
+    margin-bottom: $px-to-rem-30;
   }
 
   .name,
   .role {
     color: #fff;
+  }
+
+  .role {
+    font-style: italic;
+    font-weight: 700;
+    margin-top: -5px;
   }
 
   .bio {

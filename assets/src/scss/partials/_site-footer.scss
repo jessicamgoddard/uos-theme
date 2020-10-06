@@ -11,15 +11,15 @@
     margin-bottom: $px-to-rem-15 !important;
   }
 
-  a {
-    color: #fff;
-  }
-
 }
 
 .footer-widgets {
   background-color: $dark-purple;
   color: #fff;
+
+  a {
+    color: #fff;
+  }
 
   .widget-area:last-of-type .widget:last-of-type {
     margin-bottom: 0;
