@@ -1,18 +1,18 @@
 .button,
-button {
+button,
+.wp-block-button__link {
+  background-color: transparent;
   border: 1px solid $light-purple;
+  border-radius: 0;
   color: $dark-purple;
   cursor: pointer;
   display: inline-block;
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: 1;
   padding: $px-to-rem-15 $px-to-rem-30;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.button,
-button {
 
   &:hover,
   &:focus {

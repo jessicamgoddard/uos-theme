@@ -1,0 +1,61 @@
+blockquote {
+  color: $gold;
+  font-family: $font-miller;
+  font-size: 1.75rem;
+  font-weight: 700;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  cite {
+    color: $gray;
+    font-family: $font-realist;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+}
+
+.wp-block-pullquote cite {
+  color: $gray;
+}
+
+.wp-block-quote.is-style-large {
+
+  p {
+    font-size: 2.25rem;
+    line-height: 1.4;
+  }
+
+  cite {
+    font-size: 1.125rem;
+  }
+
+}
+
+.wp-block-pullquote .has-text-color {
+
+  cite {
+    color: inherit;
+  }
+
+}
+
+.wp-block-pullquote.has-background {
+  margin-top: $px-to-rem-30;
+  margin-bottom: $px-to-rem-30;
+}
+
+figcaption, .gallery-caption, .wp-caption-text {
+  margin-bottom: 0;
+}
+
+.wp-block-gallery ul {
+  padding-left: 0;
+}
+
+.wp-block-image {
+  text-align: center;
+}

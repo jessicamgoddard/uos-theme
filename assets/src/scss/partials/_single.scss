@@ -41,6 +41,12 @@
     color: $light-purple;
     font-size: 1.375rem;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+    
   }
 
 }

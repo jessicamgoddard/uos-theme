@@ -136,9 +136,19 @@ h6 {
   padding: 60px 15px;
   position: relative;
 
+  .alignleft {
+    margin-right: $px-to-rem-30;
+  }
+
+  .alignright {
+    margin-left: $px-to-rem-30;
+  }
+
   .alignfull {
     margin-left: -15px;
     margin-right: -15px;
+    width: auto;
+      max-width: 100vw;
   }
 
   .background {
@@ -216,7 +226,8 @@ h6 {
     .alignwide {
       margin-left: -8.125rem;
       margin-right: -8.125rem;
-      max-width: $width-wide;
+      width: auto;
+        max-width: $width-wide;
     }
 
     .background-default {

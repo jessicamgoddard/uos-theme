@@ -90,6 +90,21 @@
       a {
         color: #fff;
         padding: $px-to-rem-15 $px-to-rem-30;
+
+        span {
+          border-bottom: 3px solid transparent;
+          padding-bottom: 2px;
+        }
+
+        &:hover span,
+        &:focus span {
+          border-color: #fff;
+        }
+
+      }
+
+      &.current-menu-item a span {
+        border-color: #fff;
       }
 
     }

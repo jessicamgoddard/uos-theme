@@ -202,9 +202,15 @@ h6 {
   max-width: 45.625rem;
   padding: 60px 15px;
   position: relative; }
+  .content .alignleft {
+    margin-right: 1.875rem; }
+  .content .alignright {
+    margin-left: 1.875rem; }
   .content .alignfull {
     margin-left: -15px;
-    margin-right: -15px; }
+    margin-right: -15px;
+    width: auto;
+    max-width: 100vw; }
   .content .background {
     opacity: .75;
     position: absolute;
@@ -246,6 +252,7 @@ h6 {
   .content .alignwide {
     margin-left: -8.125rem;
     margin-right: -8.125rem;
+    width: auto;
     max-width: 61.875rem; }
   .content .background-default {
     right: calc( 22.8125rem - 225px - 50vw);
@@ -267,23 +274,68 @@ h6 {
       left: auto;
       transform: translateX(50%) rotate(-90deg); } }
 
+blockquote {
+  color: #B98505;
+  font-family: "MillerText", serif;
+  font-size: 1.75rem;
+  font-weight: 700; }
+  blockquote p {
+    margin-bottom: 0; }
+  blockquote cite {
+    color: #716F6F;
+    font-family: realist, sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400; }
+
+.wp-block-pullquote cite {
+  color: #716F6F; }
+
+.wp-block-quote.is-style-large p {
+  font-size: 2.25rem;
+  line-height: 1.4; }
+
+.wp-block-quote.is-style-large cite {
+  font-size: 1.125rem; }
+
+.wp-block-pullquote .has-text-color cite {
+  color: inherit; }
+
+.wp-block-pullquote.has-background {
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem; }
+
+figcaption, .gallery-caption, .wp-caption-text {
+  margin-bottom: 0; }
+
+.wp-block-gallery ul {
+  padding-left: 0; }
+
+.wp-block-image {
+  text-align: center; }
+
 .button,
-button {
+button,
+.wp-block-button__link {
+  background-color: transparent;
   border: 1px solid #45388E;
+  border-radius: 0;
   color: #211851;
   cursor: pointer;
   display: inline-block;
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: 1;
   padding: 0.9375rem 1.875rem;
   text-decoration: none;
   text-transform: uppercase; }
-
-.button:hover, .button:focus,
-button:hover,
-button:focus {
-  background-color: #45388E;
-  color: #fff; }
+  .button:hover, .button:focus,
+  button:hover,
+  button:focus,
+  .wp-block-button__link:hover,
+  .wp-block-button__link:focus {
+    background-color: #45388E;
+    color: #fff; }
 
 .button + .button {
   margin-left: 0.9375rem; }

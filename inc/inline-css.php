@@ -47,7 +47,7 @@ CSS;
 
   }
 
-  wp_add_inline_style( 'kyosa-theme-inline-css', $css );
-  wp_add_inline_style( 'kyosa-theme-editor-inline-css', $css );
+  wp_add_inline_style( 'uos-inline-css', $css );
+  wp_add_inline_style( 'uos-editor-inline-css', $css );
 
 }
